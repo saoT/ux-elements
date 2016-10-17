@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>Les modales</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./foundation.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+  </head>
+  <body>
+
+    <!--*******************-->
+    <!--***** TOOLTIP *****-->
+    <!--*******************-->
+    <section id="tooltip-hover">
+      <!-- bouton -->
+      <button> Hover me ! </button>
+      <!-- modal à l'intérieur du bouton -->
+      <div class="tooltip">
+        <div class="content">
+          concise information
+        </div>
+        <div class="triangle"></div>
+      </div>
+    </section>
+
+    <!--*****************************-->
+    <!-- MODALS AVEC TARGET ET HOVER -->
+    <!--*****************************-->
+    <section>
+      <!-- bouton -->
+      <a href="#modal-target">
+        <button> Click me ! </button>
+      </a>
+      <!-- modal -->
+      <div class="modal" id="modal-target">
+        <div class="box">
+          Les modales sont idéales pour des messages d'erreurs, des campagnes promotionnelles, des informations additionnelles, ou un module de connexion.
+          <a href="#nowhere">
+            <button> Fermer </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--*****************************-->
+    <!--***** DROPDOWN ON HOVER *****-->
+    <!--*****************************-->
+    <section id="dropdown-hover">
+      <!-- bouton -->
+      <button> Hover me ! </button>
+      <!-- modal à l'intérieur du bouton -->
+      <div class="dropdown">
+        <ul>
+          <li>
+            <button> submenu </button>
+          </li>
+          <li>
+            <button> submenu </button>
+          </li>
+          <li>
+            <button> submenu </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--**********************-->
+    <!--***** ACCORDEOON *****-->
+    <!--**********************-->
+    <section id="accordeon-hover">
+      <!-- modal à l'intérieur du bouton -->
+      <div class="accordeon">
+        <a href="#">
+          <button> Close Menu </button>
+        </a>
+        <ul>
+          <li>
+            <a href="#first">
+              <button> Click me ! </button>
+            </a>
+            <div id="first" class="hidden">
+              Informations supplémentaires
+            </div>
+          </li>
+          <li>
+            <a href="#second">
+              <button> Click me ! </button>
+            </a>
+            <div id="second" class="hidden">
+              Informations supplémentaires
+            </div>
+          </li>
+          <li>
+            <a href="#third">
+              <button> Click me ! </button>
+            </a>
+            <div id="third" class="hidden">
+              Informations supplémentaires
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- script -->
+    <script src="text/javascript"></script>
+  </body>
+</html>

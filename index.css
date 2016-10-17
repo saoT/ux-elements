@@ -1,0 +1,164 @@
+/***********/
+/* GENERAL */
+/***********/
+* {
+  box-sizing: border-box;
+  color: rgba(30, 30, 30, 1);
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(30, 30, 30, 1);
+}
+
+section {
+  margin: 50px;
+}
+
+button {
+  position: relative;
+  height: 40px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/*********/
+/* MODAL */
+/*********/
+.modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+}
+
+.box {
+  /* block */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 230px;
+  width: 400px;
+  background-color: rgba(220, 220, 220, 1);
+  /* content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 40px;
+}
+
+.modal button {
+  margin: 20px;
+}
+
+/* display */
+#modal-target:target {
+  display: block;
+  animation: fadein 0.6s;
+}
+
+/************/
+/* DROPDOWN */
+/************/
+.dropdown {
+  max-height: auto;
+}
+
+.dropdown {
+  overflow: hidden;
+  width:200px;
+  height: 0px;
+  transition: height 0.6s;
+}
+
+#dropdown-hover button:hover + .dropdown, .dropdown:hover {
+  height: 120px;
+}
+
+/***********/
+/* TOOLTIP */
+/***********/
+#tooltip-hover {
+  position: relative;
+  padding-top: 55px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 150px;
+  height: 20px;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+#tooltip-hover button:hover + .tooltip {
+  opacity: 1;
+}
+
+.content {
+  border-radius: 5px;
+  color: rgba(220, 220, 220, 1);
+  text-align: center;
+  padding-top: 2px;
+}
+
+.triangle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
+}
+
+/*************/
+/* ACCORDEON */
+/*************/
+.accordeon {
+  overflow: hidden;
+  width: 200px;
+}
+
+.hidden {
+  overflow: hidden;
+  height: 0;
+  padding-top: 0;
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.hidden:target {
+  opacity: 1;
+  height: 80px;
+  padding-top: 30px;
+}
+
+/*************/
+/* ANIMATION */
+/*************/
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
