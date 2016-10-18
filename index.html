@@ -13,7 +13,7 @@
     <section id="tooltip-hover">
       <!-- bouton -->
       <button> Hover me ! </button>
-      <!-- modal à l'intérieur du bouton -->
+      <!-- tooltip est hidden par défaut puis se display quand on clique sur le bouton -->
       <div class="tooltip">
         <div class="content">
           concise information
@@ -30,11 +30,11 @@
       <a href="#modal-target">
         <button> Click me ! </button>
       </a>
-      <!-- modal -->
+      <!-- modal est hidden par défaut puis se display quand on clique sur le bouton -->
       <div class="modal" id="modal-target">
         <div class="box">
           Les modales sont idéales pour des messages d'erreurs, des campagnes promotionnelles, des informations additionnelles, ou un module de connexion.
-          <a href="#nowhere">
+          <a href="#">
             <button> Fermer </button>
           </a>
         </div>
@@ -47,7 +47,7 @@
     <section id="dropdown-hover">
       <!-- bouton -->
       <button> Hover me ! </button>
-      <!-- modal à l'intérieur du bouton -->
+      <!-- Dropdown fait une hauteur de 0px, puis se déploira à sa taille normale quand on hover sur le button -->
       <div class="dropdown">
         <ul>
           <li>

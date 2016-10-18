@@ -1,3 +1,16 @@
+/*********************************************************************************************/
+/* Il y a plein de façons différentes de mettre à plat les styles par défaut des navigateurs */
+/*********************************************************************************************/
+/* Nous avons vu de notre côté les r....s css */
+/* Il y a un plugin grandement utilisé pour le faire aujourd'hui -> normalize */
+/* Sinon il y a aussi la possibilité de créer soi-même une mise à plat moins invasive qu'un reset */
+/* http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation */
+
+* {
+  /* ajout perso : attribuer border-box à tout les élements */
+  box-sizing: border-box;
+}
+
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
